@@ -1,7 +1,5 @@
 # react-u2nzsm
 
-# react-u2nzsm
-
 ## Test FHIR Patient Explorer
 
 A [React application](https://react-u2nzsm.stackblitz.io) to demonstrate the usage of the [`@amolo/js-fhir`](https://github.com/brianraila/js-fhir) FHIR Client.
