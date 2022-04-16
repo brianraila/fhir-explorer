@@ -19,7 +19,7 @@ export default function App() {
   }, [id, resource, fhirBase]);
   return (
     <div>
-      <h1>FHIR Resource Explorer.</h1>
+      <h1>FHIR Patient Resource Explorer.</h1>
       <input
         style={{ borderRadius: '5px', height: '50px', width: '300px' }}
         type="text"
