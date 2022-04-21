@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import { FHIRClient } from '@amolo/js-fhir';
+import { FHIRClient } from '@js-fhir/client';
+import { Container, Heading, Input, Stack } from '@chakra-ui/react'
 
 export default function App() {
   let [data, setData] = useState(null);
@@ -18,10 +19,13 @@ export default function App() {
     getData(fhirBase, resource, id);
   }, [id, resource, fhirBase]);
   return (
-    <div>
-      <h1>FHIR Patient Resource Explorer.</h1>
-      <input
-        style={{ borderRadius: '5px', height: '50px', width: '300px' }}
+    <>
+    <Heading sx={{textAlign:'center'}}>FHIR Patient Resource Explorer.</Heading>
+      <Container minW='container.sm'>
+     
+      <br/>
+      <Stack direction={"row"}>
+      <Input
         type="text"
         placeholder="FHIR Base URL"
         onChange={(e) => {
@@ -29,8 +33,7 @@ export default function App() {
           setFhirBase(e.target.value);
         }}
       />
-      <input
-        style={{ borderRadius: '5px', height: '50px', width: '300px' }}
+      <Input
         type="text"
         placeholder="Resource"
         onChange={(e) => {
@@ -38,8 +41,7 @@ export default function App() {
           setResource(e.target.value);
         }}
       />
-      <input
-        style={{ borderRadius: '5px', height: '50px', width: '300px' }}
+      <Input
         type="text"
         placeholder="Patient ID"
         onChange={(e) => {
@@ -47,9 +49,8 @@ export default function App() {
           setId(e.target.value);
         }}
       />
-       
-      <br />
-      <br />
+      </Stack>
+      <br/>
       <div
         style={{ backgroundColor: 'teal', padding: '2em', borderRadius: '5px' }}
       >
@@ -61,6 +62,6 @@ export default function App() {
           )}
         </p>
       </div>
-    </div>
+      </Container></>
   );
 }
