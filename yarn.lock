@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@amolo/js-fhir@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@amolo/js-fhir/-/js-fhir-0.1.3.tgz#855b94d23910320fddfe13c643754b0cca953a5d"
-  integrity sha512-ZYVmbWC5tbFOxdpWU23jJKgu0JDIfJwR0+PI6i/ET0eXX9JLuT2Bo0hwJh7q4sYl6BDYCbDZ4bRoN86khAGv/g==
-  dependencies:
-    cross-fetch "^3.1.5"
-
 "@ampproject/remapping@^2.1.0":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.1.2.tgz#4edca94973ded9630d20101cd8559cedb8d8bd34"
@@ -1364,6 +1357,13 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
+
+"@js-fhir/client@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@js-fhir/client/-/client-0.1.0.tgz#139b35d65dc7f565459ea7488e4102fda731fca1"
+  integrity sha512-j8CU1LghPV6wRERiDtH9NjCJeJsGAyDK0PsCsg98DnkoW7NFnz44Y+PZxHFMfxz6i2XQgyA8qICbidxXUG+U3A==
+  dependencies:
+    cross-fetch "^3.1.5"
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.3"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import { FHIRClient } from '@amolo/js-fhir';
+import { FHIRClient } from '@js-fhir/client';
 
 export default function App() {
   let [data, setData] = useState(null);
